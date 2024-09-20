@@ -123,7 +123,8 @@ public class TestList {
     // TODO using containsAll and List.of (see above),
     // 1) assert that list contains all five different numbers added
     // 2) assert that list does not contain all of 11, 22, and 33
-    fail("Not yet implemented"); // remove this line when done
+    assertTrue(list.containsAll(List.of(33, 44, 55, 66, 77))); //list contains all five different numbers
+    assertFalse(list.containsAll(List.of(11, 22, 33))); //list does not contain all of 11, 22, 33
   }
 
   @Test
